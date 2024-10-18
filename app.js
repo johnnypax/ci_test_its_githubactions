@@ -19,6 +19,14 @@ app.get("/client", (req, res) => {
     );
 })
 
+app.get("/pippo", (req, res) => {
+    res.json(
+        {
+            message: "Hello Pippo!"
+        }
+    );
+})
+
 const server = app.listen(port, () => {
     console.log("Sono in ascolto")
 })
